@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary, Babab!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <div id="welcome-screen" class="screen active">
+            <div class="main-header">
+                <h1>Happy Monthsary, Babab!</h1>
+                <p>Another Month Down, A Lifetime to Go</p>
+            </div>
+            <button class="mascot-btn" onclick="navigateTo('passcode-screen')">
+                <img src="assets/741555896_1065795672681012_4697255702977117493_n.jpg" alt="Cute Mascot">
+            </button>
+            <div class="tap-hint">Tap Here</div>
+        </div>
+
+        <div id="passcode-screen" class="screen">
+            <div class="main-header">
+                <h1>Happy Monthsary, Babab!</h1>
+                <p>Enter our monthsary date</p>
+            </div>
+            
+            <div class="passcode-display" id="passcode-display">----</div>
+            
+            <div class="keypad">
+                <button class="key" onclick="pressKey('1')">1</button>
+                <button class="key" onclick="pressKey('2')">2</button>
+                <button class="key" onclick="pressKey('3')">3</button>
+                <button class="key" onclick="pressKey('4')">4</button>
+                <button class="key" onclick="pressKey('5')">5</button>
+                <button class="key" onclick="pressKey('6')">6</button>
+                <button class="key" onclick="pressKey('7')">7</button>
+                <button class="key" onclick="pressKey('8')">8</button>
+                <button class="key" onclick="pressKey('9')">9</button>
+                <button class="key heart-key" onclick="clearPasscode()">❤</button>
+                <button class="key" onclick="pressKey('0')">0</button>
+                <button class="key heart-key" onclick="checkPasscode()">➔</button>
+            </div>
+        </div>
+
+        <div id="dashboard-screen" class="screen">
+            <div class="main-header">
+                <h1>Happy Monthsary, Babab!</h1>
+                <p>Another Month Down, A Lifetime to Go</p>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" onclick="navigateTo('flowers-screen')">
+                    <span class="icon">🌸</span>
+                    <span>Moments</span>
+                </div>
+                <div class="menu-card" onclick="navigateTo('letter-screen')">
+                    <span class="icon">✉</span>
+                    <span>My love letter</span>
+                </div>
+                <div class="menu-card" onclick="navigateTo('song-screen')">
+                    <span class="icon">🧸</span>
+                    <span>A song for you</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="flowers-screen" class="screen">
+            <button class="back-btn" onclick="navigateTo('dashboard-screen')">❮</button>
+            <div class="main-header">
+                <h1>Moments & Bondings</h1>
+            </div>
+            <div class="content-wrapper">
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="assets/741918189_4427577877490624_5167618107279723383_n.jpg"></div>
+                    <div class="gallery-item"><img src="assets/742031159_1675602230681958_1713228653472394228_n.jpg"></div>
+                    <div class="gallery-item"><img src="assets/742153878_2165119970714026_6292237432417325529_n.jpg"></div>
+                    <div class="gallery-item"><img src="assets/742362078_859817193588530_4408570539433158826_n.jpg"></div>
+                    <div class="gallery-item"><img src="assets/742436864_1047942281006609_676524719892142333_n.jpg"></div>
+                    <div class="gallery-item"><img src="assets/742737104_1534988281660492_8945522665000122254_n.jpg"></div>
+                    <div class="gallery-item"><img src="assets/744778786_1444398260828751_7075857374415005497_n.jpg"></div>
+                    <div class="gallery-item"><img src="assets/745660169_1347039043605994_4578325151066203207_n.jpg"></div>
+                    <div class="gallery-item"><img src="assets/747572840_2101080044122818_6212350506065113032_n.jpg"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="letter-screen" class="screen">
+            <button class="back-btn" onclick="navigateTo('dashboard-screen')">❮</button>
+            <div class="main-header">
+                <h1>My Love Letter</h1>
+            </div>
+            <div class="content-wrapper">
+                <div class="letter-container">
+                    <div class="letter-pages">
+                        <div class="letter-page active">
+                            <p>Dear Aicelle,
+ 🤍</p> <br>I hope this message finds you well, kidding. Hi mahal! How are you, my love? I’m actually a fan of writing letters making it cheesy but I don’t know why I don’t wanna do it right now? so please bare with me if how this letter would end up lol.<br><br>Love? I won’t ask you to remember that first night we started talking cause technically you do remember it, ikaw talaga unang nag message—randomly but I really didn’t expect na we would end up together. Cute.<br><br>I know it’s scary having to trust and let someone into your life again after those traumatic experiences. And yes, it‘s a weird feeling knowing someone’s taking good care of you even if it’s from long distance. It’s weird knowing someone’s gentle with you, knows what right words to say, it’s weird knowing someone can go beyond your expectations, I know all of it kase ganyan nararamdaman ko. 
+
+                        </div>
+                        <div class="letter-page">
+                            <p>Ang too good to be true ika nga nila. I was so busy building my walls and didn’t even noticed na you’ve managed climbing it. I’ll never get tired in constantly reminding you how trusting and letting someone new can love you more while you’re healing, fixing, and building your walls. If only we can go back in time, I won’t even have second thoughts letting you be with them, going thru those things over and over just so you can prove them that you also deserve their love and affection.<br> But I can’t, we can’t. So while I’m here I won’t get tired of telling you that being vulnerable and dependent (sometimes) won’t sting, trust me. And I hope you allow yourself to experience that. No one is forcing you to heal overnight, no one is forcing you to low your grounds, no one is forcing you to rush yourself in everything that you wanted to happen. Again, let time heal those wounds, and while it’s healing, I’ll be here. It is scary but it’s beautiful to experience too. Whenever you’re ready, babab.</p>
+                        </div>
+                        <div class="letter-page">
+                            <p>A constant reminder na letting yourself be with someone you’ve been praying to God won’t hurt. You just need to open yourself to them, and let them also take the lead. Trust won’t sting with the right people.  I also wanna say my deepest gratitude for choosing me every day even though we never met each other in person yet, someday we will. And trust me when I tell you this, I know where I want to be and it’s with you. Happy 1st month, baby. I love you so much.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-dots">
+                        <div class="dot active" onclick="switchLetterPage(0)"></div>
+                        <div class="dot" onclick="switchLetterPage(1)"></div>
+                        <div class="dot" onclick="switchLetterPage(2)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="song-screen" class="screen">
+            <button class="back-btn" onclick="navigateTo('dashboard-screen')">❮</button>
+
+            <div class="main-header">
+                <h1>This song is for you, Bebu!</h1>
+            </div>
+
+            <div class="video-container">
+    <video autoplay muted loop playsinline controls>
+        <source src="assets/vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+            <div class="music-vinyl">💿</div>
+
+            <audio id="loveSong" controls>
+                <source src="assets/Joji - Sanctuary (Official Video).mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+
+    <div class="desktop-collage">
+
+    <div class="photo-card p1">
+        <img src="assets/741948140_28043555698575838_1587804876640977001_n.jpg" class="desk-photo">
+        <div class="tap-hint">Tap Here</div>
+        <div class="photo-message">Hi,babab🤍</div>
+    </div>
+
+    <div class="photo-card p2">
+        <img src="assets/743288558_1036787542190527_2969043490850479271_n.jpg" class="desk-photo">
+        <div class="tap-hint">Tap Here</div>
+        <div class="photo-message">hello, elley💕</div>
+    </div>
+
+    <div class="photo-card p3">
+        <img src="assets/744250424_1534431834180247_56179031737994653_n.jpg" class="desk-photo">
+        <div class="tap-hint">Tap Here</div>
+        <div class="photo-message">Wazzup atecco🥺</div>
+    </div>
+
+    <div class="photo-card p4">
+        <img src="assets/744657759_1438459304711447_5890195040401236230_n.jpg" class="desk-photo">
+        <div class="tap-hint">Tap Here</div>
+        <div class="photo-message">hiwow, love❤️</div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
